@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="374.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.DoctorPageController">
+   <children>
+      <Button layoutX="14.0" layoutY="269.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="190.0" style="-fx-background-color: white;" text="financial report" textFill="#140707">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/report.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#addClicked" prefHeight="70.0" prefWidth="190.0" style="-fx-background-color: white;" text="   add patient     ">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="99.0" mnemonicParsing="false" onMouseClicked="#searchClicked" prefHeight="70.0" prefWidth="190.0" style="-fx-background-color: white;" text="  search             ">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="184.0" mnemonicParsing="false" onMouseClicked="#medicinesClicked" prefHeight="70.0" prefWidth="190.0" style="-fx-background-color: white;" text="add medicines ">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Medicines-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="14.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#patientListClicked" prefHeight="70.0" prefWidth="190.0" style="-fx-background-color: white;" text="  patient list      ">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/images.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="titleLabel" layoutX="653.0" layoutY="296.0" text="maman" visible="false" />
+      <Button layoutX="14.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#ListOfDrugClicked" prefHeight="70.0" prefWidth="190.0" style="-fx-background-color: white;" text="   List Of Drug   ">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/dada.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

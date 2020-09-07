@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="634.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.searchParentController">
+   <children>
+      <TextField fx:id="searchTextField" layoutX="32.0" layoutY="247.0" prefHeight="36.0" prefWidth="433.0" promptText="Enter the Id of patient:" />
+      <Label layoutX="174.0" layoutY="184.0" text="Search Patient" textFill="WHITE">
+         <font>
+            <Font name="Avenir Next Bold" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="174.0" fitWidth="162.0" layoutX="229.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/354232.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="474.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="25.0" prefWidth="25.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/894f0362.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="59.0" style="-fx-background-color: lightblue;" />
+      <Label fx:id="notFoundLabel" layoutX="210.0" layoutY="300.0" prefHeight="36.0" prefWidth="173.0" text="Patient Not Found!" textFill="#d31717" visible="false">
+         <font>
+            <Font name="Avenir Next Condensed Regular" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="546.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#visitClicked" prefHeight="25.0" prefWidth="25.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Cyan.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="814.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.VisitPageController">
+   <children>
+      <DatePicker fx:id="date" layoutX="112.0" layoutY="41.0" prefHeight="27.0" prefWidth="237.0" />
+      <Label layoutX="50.0" layoutY="41.0" text="Date:">
+         <font>
+            <Font name="Avenir Black Oblique" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionTextField" layoutX="50.0" layoutY="118.0" prefHeight="194.0" prefWidth="338.0" promptText="Description of the disease" />
+      <Label layoutX="50.0" layoutY="91.0" text="Description:">
+         <font>
+            <Font name="Avenir Black Oblique" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="417.0" layoutY="91.0" text="diagnosis:">
+         <font>
+            <Font name="Avenir Black Oblique" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="84.0" fitWidth="103.0" layoutX="681.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/5a3048a02e860e0001dbb928_AAEAAQAAAAAAAAeGAAAAJDQ2YzIwMWY4LWYzZmMtNDgyYy05ZGY3LWY5ZTY5NWVjOTdjNw.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="329.0" prefHeight="30.0" prefWidth="156.0" text="medicines    ">
+         <font>
+            <Font name="Avenir Black Oblique" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="drugBox1" layoutX="200.0" layoutY="375.0" prefWidth="150.0" />
+      <Label layoutX="119.0" layoutY="380.0" text="drug #1:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="420.0" text="drug #2:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="460.0" text="drug #3:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="500.0" text="drug #4:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="420.0" text="drug #6:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="380.0" text="drug #5:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="460.0" text="drug #7:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="430.0" layoutY="500.0" text="drug #8:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="drugBox2" layoutX="200.0" layoutY="415.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="drugBox4" layoutX="200.0" layoutY="495.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="drugBox3" layoutX="200.0" layoutY="455.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="drugBox5" layoutX="500.0" layoutY="375.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="drugBox8" layoutX="500.0" layoutY="495.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="drugBox7" layoutX="500.0" layoutY="455.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="drugBox6" layoutX="500.0" layoutY="415.0" prefWidth="150.0" />
+      <ImageView fitHeight="84.0" fitWidth="103.0" layoutX="694.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/medicines-drug-capsule-pill-medication-prescribe-3bef2aa45f65abca-512x512.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="diagnosisTextField" layoutX="427.0" layoutY="118.0" prefHeight="194.0" prefWidth="338.0" promptText="Suggested treatment" />
+      <Button layoutX="33.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#homeClicked" prefHeight="50.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/if_Home_2125603.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="705.0" layoutY="541.0" mnemonicParsing="false" onMouseClicked="#saveClicked" prefHeight="70.0" prefWidth="68.0" textFill="#6671a0">
+         <graphic>
+            <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/538720-disk_512x512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Separator layoutX="159.0" layoutY="340.0" prefHeight="3.0" prefWidth="505.0" />
+      <Label fx:id="messageLabel" layoutX="443.0" layoutY="46.0" text="not" textFill="#e40c0c" visible="false" />
+      <Label layoutX="470.0" layoutY="46.0" text="Cast:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="castTextField" layoutX="521.0" layoutY="45.0" promptText="cast" />
+   </children>
+</Pane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.DrugListController">
+   <children>
+      <Label layoutX="218.0" layoutY="200.0" text="List of drug">
+         <font>
+            <Font name="Avenir Black Oblique" size="30.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="drugListBox" layoutX="58.0" layoutY="253.0" prefHeight="27.0" prefWidth="412.0" />
+      <ImageView fitHeight="212.0" fitWidth="178.0" layoutX="211.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Treatment-512.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="24.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#homeClicked" prefHeight="60.0" prefWidth="60.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/if_Home_2125603.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="484.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#editClicked" prefHeight="43.0" prefWidth="59.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

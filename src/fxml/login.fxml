@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="476.0" style="-fx-background-color: rgb(247,247,247);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.UserPassController">
+   <children>
+      <TextField fx:id="userTextField" layoutX="77.0" layoutY="162.0" prefHeight="51.0" prefWidth="322.0" promptText="username">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField fx:id="passTextField" layoutX="78.0" layoutY="223.0" prefHeight="51.0" prefWidth="322.0" promptText="password">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Label fx:id="incLabel" alignment="CENTER" layoutX="113.0" layoutY="274.0" prefHeight="50.0" prefWidth="258.0" text="username or password is not valid!" textAlignment="CENTER" textFill="#e10938" visible="false">
+         <font>
+            <Font name="Avenir Roman" size="15.0" />
+         </font></Label>
+      <Button layoutX="75.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#click" prefHeight="52.0" prefWidth="327.0" style="-fx-background-color: rgb(93,143,247); -fx-border-color: white ;" text="login" textAlignment="CENTER" textFill="#e5e3ee">
+         <font>
+            <Font name="Didot Bold" size="24.0" />
+         </font></Button>
+      <Label layoutX="178.0" layoutY="72.0" text="Log-in">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

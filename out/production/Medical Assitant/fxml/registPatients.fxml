@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="fathersName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="849.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.RegistPatientsController">
+   <children>
+      <Label layoutX="25.0" layoutY="22.0" text="Patient details:">
+         <font>
+            <Font name="Avenir Black Oblique" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="64.0" text="Identify No:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="101.0" text="title:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="title" layoutX="35.0" layoutY="124.0" prefHeight="27.0" prefWidth="18.0" />
+      <Label layoutX="100.0" layoutY="101.0" text="First name:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="101.0" text="Last name:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="101.0" text="Father's name:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="175.0" text="Date:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="179.0" text="Year:" />
+      <ChoiceBox fx:id="yearOfBirth" layoutX="136.0" layoutY="173.0" prefWidth="93.0" />
+      <Label layoutX="270.0" layoutY="179.0" text="Month:" />
+      <ChoiceBox fx:id="monthOfBirth" layoutX="316.0" layoutY="174.0" prefHeight="27.0" prefWidth="93.0" />
+      <Label layoutX="444.0" layoutY="179.0" text="Day:" />
+      <ChoiceBox fx:id="dayOfBirth" layoutX="472.0" layoutY="174.0" prefHeight="27.0" prefWidth="93.0" />
+      <Label layoutX="22.0" layoutY="219.0" text="Gender:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="266.0" text="address:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIGHTBLUE" height="174.0" layoutX="21.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" width="461.0" />
+      <Label layoutX="46.0" layoutY="307.0" text="state:" />
+      <Label layoutX="37.0" layoutY="394.0" text="address:" />
+      <Label layoutX="46.0" layoutY="350.0" text="city:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIGHTBLUE" height="174.0" layoutX="518.0" layoutY="286.0" stroke="BLACK" strokeType="INSIDE" width="252.0" />
+      <Label layoutX="523.0" layoutY="266.0" text="Contact info:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="537.0" layoutY="386.0" text="Email:" />
+      <Label layoutX="544.0" layoutY="307.0" text="tel:" />
+      <Label layoutX="532.0" layoutY="342.0" text="phone:" />
+      <Label layoutX="544.0" layoutY="424.0" text="fax:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="2.0" layoutX="136.0" layoutY="479.0" stroke="BLACK" strokeType="INSIDE" width="632.0" />
+      <Label layoutX="32.0" layoutY="467.0" text="Insurance:">
+         <font>
+            <Font name="Avenir Black Oblique" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="554.0" text="Insurance ID:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="518.0" text="Type of insurance:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="596.0" text="Expiration date:">
+         <font>
+            <Font name="Avenir Black Oblique" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="typeOfInsurance" layoutX="177.0" layoutY="514.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="yearOfEx" layoutX="215.0" layoutY="594.0" prefHeight="20.0" prefWidth="93.0" />
+      <ChoiceBox fx:id="monthOfEx" layoutX="378.0" layoutY="594.0" prefHeight="20.0" prefWidth="93.0" />
+      <Label layoutX="179.0" layoutY="600.0" text="Year:" />
+      <Label layoutX="327.0" layoutY="599.0" text="month" />
+      <CheckBox fx:id="maleBox" layoutX="115.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleMaleBox" text="Male" />
+      <CheckBox fx:id="femaleBox" layoutX="203.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleFemaleBox" text="Female" />
+      <TextField fx:id="stateTextField" layoutX="96.0" layoutY="302.0" prefHeight="27.0" prefWidth="362.0" promptText="state" />
+      <TextField fx:id="cityTextField" layoutX="96.0" layoutY="342.0" prefHeight="27.0" prefWidth="362.0" promptText="city" />
+      <TextField fx:id="addressTextField" layoutX="96.0" layoutY="381.0" prefHeight="67.0" prefWidth="361.0" promptText="address" />
+      <TextField fx:id="faxTextField" layoutX="584.0" layoutY="421.0" promptText="fax" />
+      <TextField fx:id="mailTextField" layoutX="584.0" layoutY="380.0" promptText="Email" />
+      <TextField fx:id="phoneTextField" layoutX="584.0" layoutY="342.0" promptText="phone" />
+      <TextField fx:id="telTextField" layoutX="584.0" layoutY="302.0" promptText="tel" />
+      <TextField fx:id="lastNameTextField" layoutX="295.0" layoutY="125.0" promptText="last name" />
+      <TextField fx:id="firstNameTextField" layoutX="99.0" layoutY="124.0" promptText="first name" />
+      <TextField fx:id="identifyNoTextField" layoutX="127.0" layoutY="63.0" promptText="identify No" />
+      <TextField fx:id="insuranceIdTextField" layoutX="178.0" layoutY="551.0" promptText="insurance ID:" />
+      <TextField fx:id="fathersnameTextField" layoutX="501.0" layoutY="125.0" promptText="father's name" />
+      <ImageView fitHeight="164.0" fitWidth="156.0" layoutX="688.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="160.0" fitWidth="150.0" layoutX="688.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/Unknown-person.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="594.0" layoutY="661.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="38.0" prefWidth="224.0" style="-fx-background-color: #0fa17a;" text="save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="38.0" layoutY="649.0" mnemonicParsing="false" onMouseClicked="#homeClicked" prefHeight="60.0" prefWidth="60.0">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/if_Home_2125603.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="125.0" layoutY="649.0" mnemonicParsing="false" onMouseClicked="#visitClicked">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/a-12-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="268.0" layoutY="130.0" text="*" textFill="#e10a0a" />
+      <Label layoutX="465.0" layoutY="130.0" text="*" textFill="#e10a0a" />
+      <Label layoutX="674.0" layoutY="130.0" text="*" textFill="#e10a0a" />
+      <Label layoutX="571.0" layoutY="179.0" prefHeight="17.0" prefWidth="6.0" text="*" textFill="#e10a0a" />
+      <Label layoutX="288.0" layoutY="225.0" text="*" textFill="#e10a0a" />
+      <Label fx:id="messeageLabel" layoutX="269.0" layoutY="24.0" text="one or more manual upload required field are empty! " textFill="#c30e6c" visible="false">
+         <font>
+            <Font name="Avenir Next Condensed Medium" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="68.0" text="*" textFill="#c31313" />
+   </children>
+</Pane>

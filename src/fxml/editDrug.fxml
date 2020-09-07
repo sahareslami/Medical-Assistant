@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="618.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.EditDrugController">
+   <children>
+      <TextField fx:id="dosageTextField" layoutX="150.0" layoutY="170.0" prefHeight="27.0" prefWidth="352.0" />
+      <TextField fx:id="timetableTextField" layoutX="150.0" layoutY="220.0" prefHeight="27.0" prefWidth="352.0" />
+      <TextField fx:id="nameTextField" layoutX="150.0" layoutY="120.0" prefHeight="27.0" prefWidth="352.0" />
+      <TextArea fx:id="discriptionTextField" layoutX="150.0" layoutY="270.0" prefHeight="96.0" prefWidth="352.0" />
+      <Label layoutX="30.0" layoutY="30.0" text="Medicines info:">
+         <font>
+            <Font name="Avenir Black Oblique" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="120.0" text="Name:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="170.0" text="Dosage:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="220.0" text="Table Time:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="300.0" text="Description:">
+         <font>
+            <Font name="Avenir Black Oblique" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="30.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#homeClicked" prefHeight="60.0" prefWidth="60.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/if_Home_2125603.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="508.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#saveClicked">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/538720-disk_512x512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="102.0" fitWidth="153.0" layoutX="491.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Treatment-512.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="messageLabel" layoutX="168.0" layoutY="73.0" text="not" textFill="#b92f2f" visible="false" />
+   </children>
+</Pane>

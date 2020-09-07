@@ -1,0 +1,4 @@
+package classes;
+
+
+enum Monthes{JANUARY , FEBRUARY , MARCH , APRIL , MAY , JUNN , JULY , AUGUST, SEPTEMBER , OCTOBER , NOVEMBER , DECEMBER};

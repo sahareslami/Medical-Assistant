@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classes.SelectVisitController">
+   <children>
+      <ChoiceBox fx:id="visitBox" layoutX="110.0" layoutY="252.0" prefHeight="27.0" prefWidth="328.0" />
+      <ImageView fitHeight="167.0" fitWidth="198.0" layoutX="207.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Cyan.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="140.0" layoutY="208.0" prefHeight="36.0" prefWidth="188.0" text="Dates of Visit:">
+         <font>
+            <Font name="Avenir Black Oblique" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="456.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#selectDate">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/894f0362.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>
